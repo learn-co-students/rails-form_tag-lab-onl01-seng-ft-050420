@@ -7,5 +7,12 @@ class StudentsController < ApplicationController
   def show
     @student = Student.find(params[:id])
   end
+  
+  def new 
+  end 
+  
+  def create 
+   render 'students/new'
+  end 
 
 end
