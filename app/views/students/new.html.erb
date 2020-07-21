@@ -1,0 +1,14 @@
+<h3>Student Form </h3>
+
+<form action="<%=students_path%>" method="POST">
+    <label>First Name</label><br>
+    <input id="first_name" type="text" name="student[first_name]"><br>
+
+    <label>Last Name</label><br>
+    <input id="last_name" type="text" name="student[last_name]"><br>
+
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="submit" value="Submit Student">
+</form>
+
+<%= params.inspect%>
